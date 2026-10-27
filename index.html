@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekvira Clinic | Dr. Aniket Patil</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f9ff;
+    color: #263238;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* header */
+header {
+    background: #06314d;
+    padding: 14px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #7dd3fc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7dd3fc;
+}
+
+nav ul li a.book {
+    background: #0ea5e9;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+nav ul li a.book:hover {
+    background: #0284c7;
+    color: #fff;
+}
+
+/* common */
+section {
+    padding: 85px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 70px;
+    height: 4px;
+    background: #0ea5e9;
+    border-radius: 3px;
+    margin: 0 auto 45px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-blue {
+    background: #0ea5e9;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(14,165,233,0.4);
+}
+
+.btn-blue:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #06314d;
+}
+
+/* home */
+#home {
+    min-height: 600px;
+    background: linear-gradient(120deg, #06314d, #0369a1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.home-box {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text small {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.home-text h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.home-text h1 span {
+    color: #7dd3fc;
+}
+
+.home-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #bae6fd;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.home-text p {
+    color: #dbeafe;
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.home-photo {
+    text-align: center;
+}
+
+.home-photo img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.8);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.home-photo h3 {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+.home-photo p {
+    color: #7dd3fc;
+    font-size: 14px;
+}
+
+/* about */
+#about {
+    background: #fff;
+}
+
+.about-intro {
+    max-width: 880px;
+    margin: auto;
+    text-align: center;
+    color: #475569;
+}
+
+.about-intro p {
+    margin-bottom: 10px;
+}
+
+.doctor-profile {
+    max-width: 1000px;
+    margin: 45px auto 0;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: #f0f9ff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,70,110,0.1);
+    border: 1px solid #e0f2fe;
+}
+
+.doctor-profile img {
+    width: 230px;
+    height: 230px;
+    min-width: 230px;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 50%;
+    border: 5px solid #0ea5e9;
+    box-shadow: 0 8px 20px rgba(2,132,199,0.3);
+}
+
+.doctor-details h3 {
+    color: #075985;
+    font-size: 30px;
+}
+
+.qualification {
+    color: #0284c7;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.doctor-details p {
+    color: #475569;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.doctor-highlights {
+    max-width: 1000px;
+    margin: 28px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight {
+    background: #f8fcff;
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+    padding: 28px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.highlight:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,70,110,0.12);
+}
+
+.highlight .icon {
+    font-size: 32px;
+}
+
+.highlight h4 {
+    color: #075985;
+}
+
+.highlight p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* services */
+#services {
+    background: #e0f2fe;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service {
+    background: #fff;
+    width: 255px;
+    padding: 32px 22px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,70,110,0.1);
+    border-bottom: 4px solid #0ea5e9;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+}
+
+.service .icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.service h3 {
+    color: #075985;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.service p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* appointment */
+#appointment {
+    background: #f8fbff;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,70,110,0.12);
+}
+
+form label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #075985;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 4px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2,132,199,0.12);
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.date-time {
+    display: flex;
+    gap: 15px;
+}
+
+.date-time div {
+    width: 50%;
+}
+
+.appointment-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.whatsapp-btn,
+.email-btn {
+    width: 50%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whatsapp-btn { background: #25D366; }
+.whatsapp-btn:hover { background: #1da851; }
+.email-btn { background: #0284c7; }
+.email-btn:hover { background: #0369a1; }
+
+/* contact */
+#contact {
+    background: #fff;
+}
+
+.contact-box {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.contact-info {
+    width: 45%;
+    background: #06314d;
+    color: #e2e8f0;
+    padding: 35px 30px;
+    border-radius: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.contact-info b {
+    display: block;
+    color: #7dd3fc;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.landmark {
+    display: inline-block;
+    background: #f59e0b;
+    color: #3b2300;
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.contact-buttons {
+    margin-top: 22px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+    transform: translateY(-3px);
+}
+
+.whatsapp { background: #25D366; }
+.email { background: #0ea5e9; }
+.directions { background: #f59e0b; color: #3b2300 !important; }
+
+.map {
+    width: 55%;
+    min-height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,70,110,0.2);
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
+}
+
+/* footer */
+footer {
+    background: #06314d;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .home-box {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 36px;
+    }
+
+    .home-text h2 {
+        text-align: center;
+    }
+
+    .home-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+    .home-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .doctor-profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .doctor-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    .date-time,
+    .appointment-buttons,
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .date-time div,
+    .whatsapp-btn,
+    .email-btn,
+    .contact-info,
+    .map {
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+    <nav>
+        <div class="logo">Ekvira <span>Clinic</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointment" class="book">Book Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- home -->
+<section id="home">
+    <div class="home-box">
+
+        <div class="home-text">
+            <small>Wadala East, Mumbai</small>
+            <h1>Welcome to <span>Ekvira Clinic</span></h1>
+            <h2>Quality Healthcare with Care</h2>
+            <p>
+                Your health is our priority. Get professional healthcare
+                and personalized attention in a comfortable and friendly
+                environment.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#appointment" class="btn btn-blue">Book an Appointment</a>
+                <a href="#contact" class="btn btn-outline">Find Us</a>
+            </div>
+        </div>
+
+        <div class="home-photo">
+            <img src="doctor.jpg" alt="Dr. Aniket Patil">
+            <h3>Dr. Aniket Patil</h3>
+            <p>BHMS (CCMP)</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- about -->
+<section id="about">
+
+    <h2 class="section-title">About Ekvira Clinic</h2>
+    <div class="underline"></div>
+
+    <div class="about-intro">
+        <p>
+            Ekvira Clinic is committed to providing reliable and
+            patient-focused healthcare in a comfortable and welcoming
+            environment.
+        </p>
+
+        <p>
+            With an emphasis on personal attention, proper consultation
+            and responsible healthcare, our goal is to make every patient
+            feel comfortable and cared for.
+        </p>
+    </div>
+
+    <div class="doctor-profile">
+
+        <img src="doctor.jpg" alt="Dr. Aniket Patil">
+
+        <div class="doctor-details">
+            <h3>Dr. Aniket Patil</h3>
+            <div class="qualification">BHMS (CCMP)</div>
+
+            <p>
+                Dr. Aniket Patil is an experienced healthcare professional
+                with more than <b>15+ years of experience</b> in the
+                healthcare field.
+            </p>
+
+            <p>
+                Along with his clinical practice at Ekvira Clinic, Dr. Patil
+                is also associated with hospital practice, giving him
+                valuable experience in handling different patient needs
+                and healthcare situations.
+            </p>
+
+            <p>
+                His approach focuses on understanding the patient's concerns,
+                providing appropriate medical guidance and maintaining a
+                comfortable doctor-patient relationship.
+            </p>
+
+            <p>
+                He believes that good healthcare involves not only treatment,
+                but also proper guidance, communication and individual
+                attention to every patient.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="doctor-highlights">
+
+        <div class="highlight">
+            <div class="icon">🏆</div>
+            <h4>15+ Years</h4>
+            <p>Extensive experience in the healthcare field</p>
+        </div>
+
+        <div class="highlight">
+            <div class="icon">🏥</div>
+            <h4>Hospital Experience</h4>
+            <p>Also associated with hospital-based practice</p>
+        </div>
+
+        <div class="highlight">
+            <div class="icon">❤️</div>
+            <h4>Patient Focused</h4>
+            <p>Personal attention and care for every patient</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- services -->
+<section id="services">
+
+    <h2 class="section-title">Our Services</h2>
+    <div class="underline"></div>
+
+    <div class="services-container">
+
+        <div class="service">
+            <div class="icon">🩺</div>
+            <h3>General Consultation</h3>
+            <p>Consultation and guidance for common health problems and concerns.</p>
+        </div>
+
+        <div class="service">
+            <div class="icon">❤️</div>
+            <h3>Health Check-up</h3>
+            <p>Basic health check-ups and appropriate medical guidance.</p>
+        </div>
+
+        <div class="service">
+            <div class="icon">👨‍⚕️</div>
+            <h3>Patient Care</h3>
+            <p>Personalized care and attention for every patient.</p>
+        </div>
+
+        <div class="service">
+            <div class="icon">💙</div>
+            <h3>Medical Guidance</h3>
+            <p>Proper guidance regarding health concerns and healthcare needs.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- appointment -->
+<section id="appointment">
+
+    <h2 class="section-title">Book an Appointment</h2>
+    <div class="underline"></div>
+
+    <form onsubmit="return false;">
+
+        <label for="name">Patient Name</label>
+        <input type="text" id="name" placeholder="Patient Name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <div class="date-time">
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div>
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+            </div>
+        </div>
+
+        <label for="message">Reason for Appointment</label>
+        <textarea id="message" placeholder="Reason for Appointment" required></textarea>
+
+        <div class="appointment-buttons">
+            <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">WhatsApp</button>
+            <button type="button" class="email-btn" onclick="sendEmail()">Email</button>
+        </div>
+
+    </form>
+
+</section>
+
+
+<!-- contact -->
+<section id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+    <div class="underline"></div>
+
+    <div class="contact-box">
+
+        <div class="contact-info">
+
+            <p><b>Doctor</b> Dr. Aniket Patil (BHMS) (CCMP)</p>
+
+            <p><b>Experience</b> 15+ Years in the Healthcare Field</p>
+
+            <p><b>Practice</b> Ekvira Clinic &amp; Hospital Practice</p>
+
+            <p>
+                <b>Address</b>
+                Near Sai Mandir, Shivshankar Nagar, Salt Pan Road,
+                Wadala East, Mumbai - 400027<br>
+                <span class="landmark">Near / Beside Ekvira Mata Mandir</span>
+            </p>
+
+            <p><b>Phone</b> +91 90293 05900</p>
+
+            <p><b>Email</b> aniketv.patil87@gmail.com</p>
+
+            <div class="contact-buttons">
+                <a href="https://wa.me/919029305900" target="_blank" class="whatsapp">WhatsApp</a>
+                <a href="mailto:aniketv.patil87@gmail.com" class="email">Email</a>
+                <a href="https://maps.app.goo.gl/V5h3jneefZwaXvCc8" target="_blank" class="directions">Get Directions</a>
+            </div>
+
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://maps.google.com/maps?q=Ekvira+Mata+Mandir,+Shiv+Shankar+Nagar,+Antop+Hill,+Mumbai+400037&z=17&output=embed"
+                loading="lazy"
+                allowfullscreen
+                title="Ekvira Clinic location">
+            </iframe>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<footer>
+    <p>© 2026 Ekvira Clinic. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+    // Supabase project configuration
+    const SUPABASE_URL = "https://upcdwobnamsmbosqxntm.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_Rg744tF_MkC3ApbmUYsqng_qBT4YGgR";
+
+    // Read and validate appointment details
+    function checkForm() {
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !phone || !date || !time || !message) {
+            alert("Please fill all the details.");
+            return null;
+        }
+
+        if (!/^[0-9+\s()-]{7,20}$/.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return null;
+        }
+
+        return {
+            patient_name: name,
+            phone: phone,
+            appointment_date: date,
+            appointment_time: time,
+            reason: message
+        };
+    }
+
+    // Send appointment data to Supabase
+    async function saveAppointment(appointment) {
+        const response = await fetch(
+            `${SUPABASE_URL}/rest/v1/appointment_requests`,
+            {
+                method: "POST",
+                headers: {
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": `Bearer ${SUPABASE_KEY}`,
+                    "Content-Type": "application/json",
+                    "Prefer": "return=minimal"
+                },
+                body: JSON.stringify(appointment)
+            }
+        );
+
+        if (!response.ok) {
+            let details = "Unable to save your appointment. Please try again.";
+
+            try {
+                const error = await response.json();
+                details = error.message || error.details || error.hint || details;
+                console.error("Supabase error:", error);
+            } catch (parseError) {
+                console.error("Could not read Supabase error:", parseError);
+            }
+
+            throw new Error(details);
+        }
+    }
+
+    function createAppointmentMessage(appointment) {
+        return (
+            "Hello Dr. Aniket Patil,\n\n" +
+            "I would like to request an appointment at Ekvira Clinic.\n\n" +
+            "Patient Name: " + appointment.patient_name + "\n" +
+            "Phone Number: " + appointment.phone + "\n" +
+            "Appointment Date: " + appointment.appointment_date + "\n" +
+            "Appointment Time: " + appointment.appointment_time + "\n" +
+            "Reason: " + appointment.reason + "\n\n" +
+            "Thank you."
+        );
+    }
+
+    // Save to Supabase before opening WhatsApp
+    async function sendWhatsApp() {
+        const appointment = checkForm();
+        if (!appointment) return;
+
+        // Open immediately from the click so the browser is less likely to block it.
+        const whatsappWindow = window.open("about:blank", "_blank");
+
+        try {
+            await saveAppointment(appointment);
+
+            const url = "https://wa.me/919029305900?text=" +
+                encodeURIComponent(createAppointmentMessage(appointment));
+
+            if (whatsappWindow && !whatsappWindow.closed) {
+                whatsappWindow.location.href = url;
+            } else {
+                window.location.href = url;
+            }
+        } catch (error) {
+            if (whatsappWindow && !whatsappWindow.closed) {
+                whatsappWindow.close();
+            }
+            console.error("Appointment save failed:", error);
+            alert("Your appointment could not be saved. Please try again.\n\n" + error.message);
+        }
+    }
+
+    // Save to Supabase before preparing the email
+    async function sendEmail() {
+        const appointment = checkForm();
+        if (!appointment) return;
+
+        // Open immediately from the click so the browser is less likely to block it.
+        const emailWindow = window.open("about:blank", "_blank");
+
+        try {
+            await saveAppointment(appointment);
+
+            const subject = "Appointment Request - Ekvira Clinic";
+            const body = createAppointmentMessage(appointment);
+            const url = "mailto:aniketv.patil87@gmail.com?subject=" +
+                encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+            if (emailWindow && !emailWindow.closed) {
+                emailWindow.location.href = url;
+            } else {
+                window.location.href = url;
+            }
+        } catch (error) {
+            if (emailWindow && !emailWindow.closed) {
+                emailWindow.close();
+            }
+            console.error("Appointment save failed:", error);
+            alert("Your appointment could not be saved. Please try again.\n\n" + error.message);
+        }
+    }
+</script>
+
+</body>
+</html>
